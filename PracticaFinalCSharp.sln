@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proyecto Aplicación WPF", "Proyecto Aplicación WPF", "{671A7FC6-6DF0-4C4C-9295-106AFE81B766}"
 EndProject
@@ -14,6 +14,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{AF159986-91C0-4612-8F47-3913C181BDB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "WpfApplication\WpfApplication.csproj", "{C04896B9-E267-4631-8187-92BFAFEF87C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CE09555-BBE3-4FAE-BCA5-3263FFA8A521} = {8CE09555-BBE3-4FAE-BCA5-3263FFA8A521}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ClassLibrary1\DataAccess.csproj", "{D89744E2-FABE-4C85-B8DE-C823196FA1C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{CE4FD1CB-C4E9-48C7-92C6-B2CE519008D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,10 @@ Global
 		{C04896B9-E267-4631-8187-92BFAFEF87C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04896B9-E267-4631-8187-92BFAFEF87C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C04896B9-E267-4631-8187-92BFAFEF87C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89744E2-FABE-4C85-B8DE-C823196FA1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89744E2-FABE-4C85-B8DE-C823196FA1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89744E2-FABE-4C85-B8DE-C823196FA1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89744E2-FABE-4C85-B8DE-C823196FA1C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +52,6 @@ Global
 		{8CE09555-BBE3-4FAE-BCA5-3263FFA8A521} = {955CDB32-CEAC-4771-9720-948DC8D16967}
 		{AF159986-91C0-4612-8F47-3913C181BDB6} = {42F61BA1-D323-49AE-8695-B81C92E92358}
 		{C04896B9-E267-4631-8187-92BFAFEF87C0} = {671A7FC6-6DF0-4C4C-9295-106AFE81B766}
+		{D89744E2-FABE-4C85-B8DE-C823196FA1C4} = {CE4FD1CB-C4E9-48C7-92C6-B2CE519008D5}
 	EndGlobalSection
 EndGlobal

@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Data.Common;
 using System.Data;
 
-namespace WcfService
+namespace DataAccess
 {
     public static class DataAcess
     {
