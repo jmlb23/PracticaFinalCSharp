@@ -18,17 +18,25 @@ namespace WcfService
         public List<Cliente> GetClients(string id)
         {
             
-            return DataAcess.Set.Tables["Cliente"].Select().Where(row => id == null || id == "" ? true : row[0].Equals(id)).Select(row => new Cliente { CustomerID = row[0].ToString(),
-                CompanyName = row[1].ToString(),
-                ContactTitle = row[2].ToString(),
-                Address = row[3].ToString(),
-                City = row[4].ToString(),
-                Region = row[5].ToString(),
-                PostalCode = row[6].ToString(),
-                Country = row[7].ToString(),
-                Phone = row[8].ToString(),
-                Fax = row[9].ToString()
-            }).ToList();
+            return DataAcess.Set.Tables["Cliente"]
+                .Select()
+                .Where(row => id == null || id == "" ? true : row[0].Equals(id))
+                .Select(row => 
+                new Cliente
+                {
+                    CustomerID = row[0].ToString(),
+                    CompanyName = row[1].ToString(),
+                    ContactName = row[2].ToString(),
+                    ContactTitle = row[3].ToString(),
+                    Address = row[4].ToString(),
+                    City = row[5].ToString(),
+                    Region = row[6].ToString(),
+                    PostalCode = row[7].ToString(),
+                    Country = row[8].ToString(),
+                    Phone = row[9].ToString(),
+                    Fax = row[10].ToString()
+                }
+                ).ToList();
 
         }
     }

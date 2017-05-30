@@ -8,7 +8,7 @@ namespace WpfApplication
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Modelo")
+            : base("name=Model1")
         {
         }
 
